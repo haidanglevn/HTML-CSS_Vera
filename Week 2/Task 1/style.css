@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+  padding: 0px 0px;
+  box-sizing: border-box; /* make all the box to be the same */
+}
+
+body {
+  background-color: #eeede7;
+  font-family: sans-serif;
+  color: #333;
+}
+
+h1 {
+  line-height: 42px;
+  font-size: 50px;
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+/* header area */
+
+header {
+  text-align: right;
+
+  font-size: 33px;
+}
+
+header li {
+  display: inline-block;
+}
+
+section {
+  padding: 32px;
+}
+
+nav ul {
+  background: black;
+  list-style-type: none; /* no dot before content*/
+  color: black;
+}
+
+ul li a {
+  padding: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #04aa6d;
+}
+
+/* contact page */
+#contact {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#contact td {
+  border: 1px solid black;
+}
+
+#contact th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+#contact tr:hover {
+  background-color: gray;
+}
+
+/* Boxes */
+
+#boxes {
+  background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
+}
+
+.box {
+  display: inline-block;
+  margin: 32px; /* each box has margin of 32 in each sides */
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  height: 200px;
+  width: 200px;
+  background: rgb(155, 155, 155);
+  margin-bottom: 10px;
+}
+
+.box1 {
+  border-style: ridge;
+  border-color: yellow;
+  border-width: 20%;
+  border-radius: 20%;
+  background-image: url("https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: center;
+  background-size: 100%;
+}
+
+.box2 {
+  border: 10px double green;
+  border-radius: 25% 0 25% 0;
+  background-image: url("https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: center;
+  background-size: 100%;
+}
+
+.box3 {
+  border: 3px dotted pink;
+  border-radius: 0 35% 35% 0;
+  background-image: url("https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: center;
+  background-size: 100%;
+}
+.box4 {
+  border-radius: 10%;
+  border-width: 5px;
+  border-style: dotted dashed solid double;
+  border-color: red green yellow blue;
+  background-image: url("https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: center;
+  background-size: 100%;
+}
+.box5 {
+  border-radius: 50%;
+  background-image: url("https://images.unsplash.com/photo-1555126634-323283e090fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  background-position: center;
+  background-size: 100%;
+}
