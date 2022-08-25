@@ -13,13 +13,10 @@ thead {
   color: white;
 }
 
-tbody {
-  border-color: black;
-}
-
 table,
 td,
 th {
   padding: 10px;
   border: 1px solid;
+  border-color: black;
 }
