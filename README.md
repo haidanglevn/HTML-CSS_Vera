@@ -1,1 +1,1 @@
-# Vera
+# HTML and CSS course with Vera 
