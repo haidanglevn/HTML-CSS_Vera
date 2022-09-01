@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+  .card {
+    background-color: aqua;
+    color: red;
+  }
+  body {
+    background-color: green;
+  }
+}
+
+body {
+  font-size: large;
+  background: coral;
+}
+
+section {
+  min-height: 25vh;
+}
+
+#something1 {
+  background-color: red;
+}
+#something2 {
+  background-color: blue;
+}
+#something3 {
+  background-color: green;
+}
+#something4 {
+  background-color: yellow;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  width: 33%;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* for the responsive website to not squeeze the img */
+}
+
+.card h3,
+.card p,
+.card a {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
