@@ -15,6 +15,7 @@ header {
   background-color: #333;
   color: white;
   flex-direction: row;
+  padding: 20px;
 }
 
 .logo {

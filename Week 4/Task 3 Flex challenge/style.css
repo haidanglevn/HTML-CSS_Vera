@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+header div {
+  background: yellow;
+  flex: 1;
+}
+
+nav {
+  height: 10vh;
+  flex: 1;
+  background: pink;
+  flex-direction: row-reverse;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  flex-direction: row;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#nav1 {
+  background-color: red;
+  height: inherit;
+}
