@@ -59,3 +59,12 @@ section {
   position: sticky;
   top: 100px; /* the item starts to stick when its top margin to the screen is 100px */
 }
+
+.material-icons {
+  color: #333;
+  font-size: 48px; /* font-size helps adjusting icon size */
+}
+
+.material-icons:hover {
+  color: red;
+}

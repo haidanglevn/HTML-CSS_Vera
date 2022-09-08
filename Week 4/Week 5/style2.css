@@ -1,0 +1,61 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #333;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#skills {
+  min-height: 500px;
+  display: flex;
+}
+
+.skill {
+  background-color: rgb(247, 247, 247);
+  padding: 2px;
+  border: 1px solid-gray;
+  flex: 4;
+  flex-direction: column;
+}
+
+.material-icons {
+  font-size: 100px;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: space-around;
+  text-align: center;
+}
+
+progress[value] {
+  height: 1.5rem;
+  background: transparent;
+  --webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: coral;
+  border-radius: 5px;
+  background-size: 35px 20px;
+}
