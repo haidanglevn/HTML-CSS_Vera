@@ -8,3 +8,54 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+section {
+  background: #bebebe;
+  height: 400px;
+  width: 100vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.item {
+  height: 200px;
+  width: 200px;
+  background: skyblue;
+  border-radius: 5px;
+  padding: 1rem;
+  z-index: 1;
+}
+/* the right order of child: first > nth(2) > nth(3) > .... > last. On the case below we can just use first and last, it works the same */
+#section-a .item:nth-child(2) {
+  position: relative;
+  z-index: 3;
+}
+
+#section-a .item:nth-child(3) {
+  position: relative;
+  background: teal;
+  top: -100px;
+  left: 100px;
+  z-index: 2;
+  text-align: center;
+}
+
+#section-b .item {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#section-c .item {
+  position: absolute;
+  right: 200px;
+  bottom: 0;
+}
+#section-d {
+  height: 2000px;
+}
+
+#section-d .item {
+  position: sticky;
+  top: 100px; /* the item starts to stick when its top margin to the screen is 100px */
+}
