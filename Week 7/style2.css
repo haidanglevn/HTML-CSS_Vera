@@ -1,0 +1,29 @@
+:root {
+  --background-color: cornsilk;
+  --highlight-color: salmon;
+  --dark-color: #333;
+  --light-color: skyblue;
+  --font: "Poppins", monospace;
+  --gradient: linear-gradient(to right top, #051937, #004d7a, #a8eb12);
+}
+
+body {
+  background: var(--gradient);
+  height: 100vh;
+  font-family: var(--font);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  margin: 0 auto;
+  width: 150px;
+  background: var(--light-color);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px var(--highlight-color);
+}
