@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow: #fac300;
+  --black: #0e1d30;
+  --lightblue: #30507e;
+  --darkblue: #003272;
+  --red: #aa1316;
+  --bcred: #60103a;
+  --bcpink: #f7e1d3;
+  --font: "Poppins", "Courier New", Courier, monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+h4,
+p {
+  font-size: 0.8rem;
+}
+a {
+  text-decoration: none;
+}
+.nav-bar {
+  background-color: var(--darkblue);
+  color: var(--yellow);
+  height: 10vh;
+}
+.logo {
+  display: block;
+  font-family: "Dancing Script";
+  padding-left: 5px;
+  font-size: 8vh;
+  float: left;
+}
+.nav-bar ul {
+  list-style-type: none;
+  height: 60px;
+  float: right;
+  padding-top: 10px;
+}
+.nav-bar li {
+  display: inline-block;
+  padding: 10px;
+}
+.nav-bar a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--yellow);
+}
+.hero-page {
+  display: grid;
+  grid-template-columns: 20vw 10vw 40vw 10vw 20vw;
+  grid-template-rows: 30vh 55vh;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: var(--black);
+  color: var(--yellow);
+}
+
+.title {
+  grid-area: 1 / 2 / 2 / 5;
+  text-align: center;
+}
+button {
+  background-color: var(--bcpink);
+  color: var(--bcred);
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 1.2rem;
+  border-radius: 10%;
+  padding: 10px;
+}
+.quick-intro {
+  grid-area: 2 / 1 / 2 / 3;
+  padding: 30px 0 0 50px;
+}
+.quick-intro-item {
+  padding: 10px;
+}
+.quick-intro-item h4 {
+  color: var(--bcpink);
+}
+.hero-img {
+  grid-area: 2 / 3 / 3 / 3;
+  text-align: center;
+}
+img {
+  padding-top: 20px;
+  width: 90%;
+  height: 90%;
+}
+
+.quick-skill {
+  grid-area: 2 / 4 / 4 / 6;
+  font-size: 4rem;
+  padding: 0 25% 25% 25%;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-items: center;
+}
+i {
+  text-align: center;
+  justify-items: center;
+}
