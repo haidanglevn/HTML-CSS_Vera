@@ -32,7 +32,7 @@
     <div class="nav-bar">
       <div class="logo">DangLe</div>
       <ul class="nav-item">
-        <li><a href="project">Project</a></li>
+        <li><a href="#project-page">Project</a></li>
         <li><a href="skill">Skill</a></li>
         <li><a href="aboutme">About me</a></li>
         <li><a href="contact">Contact</a></li>
@@ -41,7 +41,7 @@
     <div class="hero-page">
       <div class="title">
         <h1>DANG LE <br />FULL STACK DEVELOPER</h1>
-        <button><nav>View my projects</nav></button>
+        <button><a href="#project-page">View my projects</a></button>
       </div>
 
       <div class="quick-intro">
@@ -76,6 +76,174 @@
         <i class="fab fa-css3-alt"></i>
         <i class="fab fa-react"></i>
         <i class="fab fa-node"></i>
+      </div>
+    </div>
+
+    <div class="project-page" id="project-page">
+      <h1 class="project-page-title">MY LASTEST PROJECTS</h1>
+
+      <div class="new-project">
+        <div class="project-card">
+          <img
+            src="Assets/projects/speedgame.png"
+            alt="Project img"
+            class="project-img"
+            onclick="openModal('speedgame')"
+          />
+          <h4>HTML5, CSS, JS</h4>
+          <h3>Halloween Speedgame</h3>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/projects/pokedex.png"
+            alt="Project img"
+            class="project-img"
+            onclick="openModal('pokedex')"
+          />
+          <h4>HTML5, CSS, JS</h4>
+          <h3>PokeDex</h3>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/projects/pizza.png"
+            alt="Project img"
+            class="project-img"
+            onclick="openModal('pizza')"
+          />
+          <h4>HTML5, CSS, JS</h4>
+          <h3>Pizza Order Page</h3>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/projects/gradient.png"
+            alt="Project img"
+            class="project-img"
+            onclick="openModal('gradient')"
+          />
+          <h4>HTML5, CSS, JS</h4>
+          <h3>Gradient Background Generator</h3>
+        </div>
+      </div>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="past-project">
+        <div class="past-project-title project-card">
+          <h1>PAST PROJECTS</h1>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/project-demo.jpg"
+            alt="Project img"
+            class="project-img"
+            id="123"
+            onclick="openModal(this.id)"
+          />
+          <h4>Project 1</h4>
+          <h3>Website 1</h3>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/project-demo.jpg"
+            alt="Project img"
+            class="project-img"
+            id="123"
+            onclick="openModal(this.id)"
+          />
+          <h4>Project 1</h4>
+          <h3>Website 1</h3>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/project-demo.jpg"
+            alt="Project img"
+            class="project-img"
+            id="123"
+            onclick="openModal(this.id)"
+          />
+          <h4>Project 1</h4>
+          <h3>Website 1</h3>
+        </div>
+      </div>
+
+      <!-- All the modals are here, but hidden at default -->
+      <div class="modal" id="speedgame">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/speedgame-modal.png"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">Halloween Speedgame</h2>
+          <p id="modal-p">
+            A halloween-theme speedgame, where you have to catch the evil
+            pumpkins as fast as possible.
+          </p>
+          <a href="https://public.bc.fi/s2200738/speedgame/"
+            >Link to live page</a
+          >
+        </div>
+      </div>
+
+      <div class="modal" id="pokedex">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/pokedex-modal.png"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">PokeDex</h2>
+          <p id="modal-p">
+            A PokeDex website that can fetch data from Pokeapi and render
+            pokemon cards depends on generation. Pokemon data can also be store
+            in localstorage to save time and data usage for fetching. <br />
+          </p>
+          <a href="https://public.bc.fi/s2200738/pokedex/">Link to live page</a>
+        </div>
+      </div>
+
+      <div class="modal" id="pizza">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/pizza-modal.png"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">Pizza Order Page</h2>
+          <p id="modal-p">
+            A pizza demo page that allow users to choose their pizza size,
+            toppings and delivery services, then see the total price and press
+            order.
+          </p>
+          <a href="https://public.bc.fi/s2200738/pizzaorder/"
+            >Link to live page</a
+          >
+        </div>
+      </div>
+
+      <div class="modal" id="gradient">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/gradient-modal.png"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">Gradient Background Generator</h2>
+          <p id="modal-p">
+            A handy tool to quickly choose two colors and a direction to make a
+            gradient color for CSS.
+          </p>
+          <a href="https://public.bc.fi/s2200738/backgroundgenerator/"
+            >Link to live page</a
+          >
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
