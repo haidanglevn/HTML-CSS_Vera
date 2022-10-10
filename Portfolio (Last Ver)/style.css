@@ -15,7 +15,7 @@
 }
 a {
   text-decoration: none;
-  color: var(--yellow);
+  color: white;
 }
 html {
   scroll-behavior: smooth;
@@ -85,7 +85,7 @@ a {
   background-size: cover;
 }
 
-.title {
+.hero-page-title {
   padding-top: 20px;
   grid-area: 1 / 2 / 2 / 5;
   text-align: center;
@@ -188,7 +188,6 @@ i {
   padding: 0 10px;
 }
 .past-project-title {
-  justify-items: baseline;
   color: var(--yellow);
 }
 .modal {
@@ -201,10 +200,10 @@ i {
   height: 100%;
   overflow: scroll;
   background-color: rgba(0, 0, 0, 0.8);
-  color: var(--bcpink);
+  color: var(--yellow);
 }
 .modal-content {
-  background-color: var(--bcred);
+  background-color: var(--darkblue);
   padding: 10px 20px;
   border: 1px solid #888;
   width: 80%;
@@ -217,7 +216,7 @@ i {
   max-height: 70vh;
 }
 .close {
-  background-color: #60103a;
+  background-color: var(--darkblue);
   position: absolute;
   width: 40px;
   height: 40px;
@@ -231,4 +230,31 @@ i {
 }
 .close:hover {
   background-color: var(--yellow);
+}
+
+/* ABOUT ME */
+.about-me {
+  background-color: var(--bcred);
+  color: var(--bcpink);
+  padding: 0 100px;
+}
+.about-me .title {
+  text-align: center;
+  padding: 20px;
+}
+.about-me-content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.about-me-content p {
+  padding: 0 50px;
+  text-align: justify;
+}
+#bc-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+#progress-bar {
+  width: 100%;
 }
