@@ -91,13 +91,16 @@ a {
   grid-area: 1 / 2 / 2 / 5;
   text-align: center;
 }
+.hero-page-title a {
+  color: var(--bcred);
+}
 button {
   background-color: var(--bcpink);
   color: var(--bcred);
   text-decoration: none;
   font-family: var(--font);
   font-size: 1.2em;
-  border-radius: 10%;
+  border-radius: 40%;
   padding: 10px;
 }
 .quick-intro {
@@ -153,11 +156,16 @@ button {
 .project-card {
   text-align: center;
   padding: 0 5px;
+  transition: all 1s;
 }
 .project-card img {
   border-radius: 10%;
   width: 200px;
   height: 250px;
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-5%) scale(110%);
 }
 .project-card h3 {
   color: var(--yellow);
