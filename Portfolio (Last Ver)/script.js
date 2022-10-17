@@ -3,6 +3,7 @@ modal = document.querySelectorAll(".modal");
 modalContainer = document.querySelector(".modal-content");
 let link, title, p, modalContent;
 console.log("modal ", modal);
+topBtn = document.getElementById("Top");
 
 const openModal = (value) => {
   console.log(value);
@@ -20,3 +21,19 @@ const closeModal = () => {
     document.body.style.overflow = "auto";
   });
 };
+
+window.onscroll = function () {
+  showTopButton();
+};
+
+function showTopButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+function scrollUp() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
