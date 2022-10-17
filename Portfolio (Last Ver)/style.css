@@ -376,3 +376,28 @@ input {
   text-align: center;
   height: 30px;
 }
+
+/* THANKYOU PAGE */
+.thank-you {
+  background-color: var(--darkblue);
+  color: var(--yellow);
+  text-align: center;
+  padding: 50px 40vw;
+  height: calc(100vh - 30px);
+}
+.thank-you div {
+  padding: 20px;
+}
+#surprise {
+  height: 30vh;
+}
+.thank-you a {
+  color: var(--bcred);
+}
+#mail {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  transform: rotate(30deg);
+  width: 300px;
+}
