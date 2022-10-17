@@ -56,7 +56,8 @@ a {
   list-style-type: none;
   height: 60px;
   float: right;
-  padding-top: 10px;
+  padding: 20px;
+  font-size: 1.2em;
 }
 .nav-bar li {
   display: inline-block;
@@ -95,7 +96,7 @@ button {
   color: var(--bcred);
   text-decoration: none;
   font-family: var(--font);
-  font-size: 1.2rem;
+  font-size: 1.2em;
   border-radius: 10%;
   padding: 10px;
 }
@@ -121,17 +122,16 @@ button {
 
 .quick-skill {
   grid-area: 2 / 4 / 4 / 6;
-  font-size: 4rem;
-  padding: 0 0 15% 5%;
+  padding: 0 15% 40% 15%;
   display: grid;
   grid-template-columns: auto auto;
-
   align-items: center;
   justify-items: center;
 }
-i {
+.quick-skill i {
   text-align: center;
   justify-items: center;
+  font-size: 4em;
 }
 
 /* PROJECT PAGE */
@@ -230,6 +230,7 @@ i {
 }
 .close:hover {
   background-color: var(--yellow);
+  cursor: pointer;
 }
 
 /* ABOUT ME */
@@ -245,6 +246,7 @@ i {
 .about-me-content {
   display: grid;
   grid-template-columns: auto auto;
+  padding: 0 12vw;
 }
 .about-me-content p {
   padding: 0 50px;
@@ -254,6 +256,9 @@ i {
   height: 300px;
   width: 300px;
   border-radius: 15px;
+}
+.bar {
+  padding: 0 12vw;
 }
 #progress-bar {
   width: 100%;
@@ -325,10 +330,10 @@ i {
   color: var(--yellow);
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 20px 100px;
+  padding: 0 100px;
 }
 .contact-page-left {
-  padding: 50px;
+  padding: 5vw 5vw 0 5vw;
   text-align: center;
 }
 form {
@@ -346,9 +351,11 @@ input {
 }
 #message {
   height: 200px;
+  width: 100%;
+  margin: 10px;
 }
 .contact-page-right {
-  padding: 50% 20px;
+  padding: 5vw;
 }
 .contact-page-right div {
   padding: 20px 0;
@@ -356,4 +363,16 @@ input {
 .fab {
   font-size: 30px;
   padding: 5px;
+}
+#mailbox {
+  width: 25vw;
+  height: 30vh;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--black);
+  color: var(--yellow);
+  text-align: center;
+  height: 30px;
 }
