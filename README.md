@@ -2,7 +2,7 @@
 
 
 # Quick theme
-
+```css
 * {
   padding: 0;
   margin: 0;
@@ -18,3 +18,4 @@
   --bcpink: #f7e1d3;
   --font: "Poppins", "Courier New", Courier, monospace;
 }
+```
