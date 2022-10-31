@@ -425,3 +425,62 @@ input {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 1500, "GRAD" 0, "opsz" 48;
 }
+
+/* GALLERY */
+.gallery {
+  background-color: var(--lightblue);
+  color: var(--yellow);
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+}
+.gallery h1 {
+  text-align: center;
+  padding: 20px 20vw;
+}
+.gallery-container {
+  display: grid;
+  padding: 20px 10vw;
+  grid-template-areas:
+    "photo1 photo1 photo2 photo2 photo3 photo3"
+    "photo1 photo1 photo4 photo4 photo3 photo3"
+    "photo5 photo8 photo8 photo8 photo3 photo3"
+    "photo5 photo8 photo8 photo8 photo9 photo9"
+    "photo6 photo8 photo8 photo8 photo9 photo9"
+    "photo7 photo8 photo8 photo8 photo9 photo9";
+}
+.photo {
+  padding: 5px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.photo1 {
+  grid-area: photo1;
+}
+.photo2 {
+  grid-area: photo2;
+}
+.photo3 {
+  grid-area: photo3;
+}
+.photo4 {
+  grid-area: photo4;
+}
+.photo5 {
+  grid-area: photo5;
+}
+.photo6 {
+  grid-area: photo6;
+}
+.photo7 {
+  grid-area: photo7;
+}
+.photo8 {
+  grid-area: photo8;
+}
+.photo9 {
+  grid-area: photo9;
+}
