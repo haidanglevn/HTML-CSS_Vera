@@ -102,13 +102,13 @@
         </div>
         <div class="project-card">
           <img
-            src="Assets/projects/gradient.png"
+            src="Assets/projects/travel-planner1.png"
             alt="Project img"
             class="project-img"
-            onclick="openModal('gradient')"
+            onclick="openModal('travel-planner')"
           />
-          <h4>HTML5, CSS, JS</h4>
-          <h3>Gradient Background Generator</h3>
+          <h4>React, JavaScript, Firebase</h4>
+          <h3>Travel Planner App</h3>
         </div>
         <div class="project-card">
           <img
@@ -164,18 +164,61 @@
 
         <div class="project-card">
           <img
-            src="Assets/project-demo.jpg"
+            src="Assets/projects/snake.png"
             alt="Project img"
             class="project-img"
-            id="123"
-            onclick="openModal(this.id)"
+            onclick="openModal('snake')"
           />
-          <h4>Project 1</h4>
-          <h3>Website 1</h3>
+          <h4>JavaScript, HTML5, CSS</h4>
+          <h3>Snake Game</h3>
         </div>
       </div>
 
       <!-- All the modals are here, but hidden at default -->
+      <div class="modal" id="travel-planner">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/collage.jpeg"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">Travel Planner app (Team Project)</h2>
+          <p id="modal-p">
+            Three-person Team project at BCH, created with ReactJS, storing user
+            data with Firebase and fetch the data with Axios.
+            <br />
+            Main features: weather API for up-to-date weather forecast; browse
+            cities and tourist attractions; create and modify travel planners,
+            Google Authentication for user login.
+          </p>
+          <a href="https://github.com/haidanglevn/BCH_Team5_TravelPlanner"
+            ><span class="material-symbols-outlined"> link </span> Link to
+            GitHub repo</a
+          >
+        </div>
+      </div>
+      <div class="modal" id="snake">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/snake.png"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">
+            Snake Game with Queue Data Structure Implementation
+          </h2>
+          <p id="modal-p">
+            A classic snake game made with implementation of queue data
+            structure for the snake body, write in vanilla JavaScript.
+          </p>
+          <a href="https://public.bc.fi/s2200738/snakegame/"
+            ><span class="material-symbols-outlined"> link </span> Link to
+            GitHub repo</a
+          >
+        </div>
+      </div>
       <div class="modal" id="tasteit">
         <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
@@ -196,8 +239,8 @@
             created with ChatGPT.
           </p>
           <a href="https://github.com/haidanglevn/react-tasteit"
-            ><span class="material-symbols-outlined"> link </span>
-            Link to GitHub repo</a
+            ><span class="material-symbols-outlined"> link </span> Link to
+            GitHub repo</a
           >
         </div>
       </div>
@@ -212,11 +255,15 @@
           />
           <h2 id="modal-title">Halloween Speedgame</h2>
           <p id="modal-p">
-            A halloween-theme speedgame, where you have to catch the evil
-            pumpkins as fast as possible.
+            Halloween theme speed game written in vanilla JS with HTML5 & CSS, a
+            reminiscence of Flash games
+            <br />
+            Features: Name and difficulty setting, last attempts scoreboard,
+            sound assets, theme styling for UI
           </p>
           <a href="https://public.bc.fi/s2200738/speedgame/"
-            ><span class="material-symbols-outlined"> link </span> Link to live page</a
+            ><span class="material-symbols-outlined"> link </span> Link to live
+            page</a
           >
         </div>
       </div>
@@ -231,11 +278,16 @@
           />
           <h2 id="modal-title">PokeDex</h2>
           <p id="modal-p">
-            A PokeDex website that can fetch data from Pokeapi and render
-            pokemon cards depends on generation. Pokemon data can also be store
-            in localstorage to save time and data usage for fetching. <br />
+            PokeDex app written in vanilla JS with HTML5 & CSS, fetching Pokémon
+            data from PokeAPI and storing it in Local storage for later use.
+            <br />
+            Features: Fetch Pokémon by Generation 1-9, or read from local
+            storage, search Pokémon by name or types.
           </p>
-          <a href="https://public.bc.fi/s2200738/pokedex/"><span class="material-symbols-outlined"> link </span> Link to live page</a>
+          <a href="https://public.bc.fi/s2200738/pokedex/"
+            ><span class="material-symbols-outlined"> link </span> Link to live
+            page</a
+          >
         </div>
       </div>
 
@@ -253,8 +305,9 @@
             toppings and delivery services, then see the total price and press
             order.
           </p>
-          <a href="https://public.bc.fi/s2200738/pizzaorder/"
-            > <span class="material-symbols-outlined"> link </span> Link to live page</a
+          <a href="https://public.bc.fi/s2200738/pizzaorder/">
+            <span class="material-symbols-outlined"> link </span> Link to live
+            page</a
           >
         </div>
       </div>
@@ -272,8 +325,9 @@
             A handy tool to quickly choose two colors and a direction to make a
             gradient color for CSS.
           </p>
-          <a href="https://public.bc.fi/s2200738/backgroundgenerator/"
-            > <span class="material-symbols-outlined"> link </span>Link to live page</a
+          <a href="https://public.bc.fi/s2200738/backgroundgenerator/">
+            <span class="material-symbols-outlined"> link </span>Link to live
+            page</a
           >
         </div>
       </div>
