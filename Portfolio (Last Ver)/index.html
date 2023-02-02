@@ -34,10 +34,14 @@
       <ul class="nav-item">
         <li><a href="#project-page">Project</a></li>
         <li><a href="#skill-page">Skill</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
         <li><a href="#aboutme">About me</a></li>
         <li><a href="#contact-page">Contact</a></li>
-        <li><a href="https://drive.google.com/file/d/13A_Fjbe26URRPav9fjhyxAXb94fls7Th/view?usp=sharing">View full CV</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/13A_Fjbe26URRPav9fjhyxAXb94fls7Th/view?usp=sharing"
+            >View full CV</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -88,6 +92,26 @@
       <div class="new-project">
         <div class="project-card">
           <img
+            src="Assets/projects/tasteit.png"
+            alt="Project img"
+            class="project-img"
+            onclick="openModal('tasteit')"
+          />
+          <h4>React, JSON server, Axios</h4>
+          <h3>TasteIt recipe app</h3>
+        </div>
+        <div class="project-card">
+          <img
+            src="Assets/projects/gradient.png"
+            alt="Project img"
+            class="project-img"
+            onclick="openModal('gradient')"
+          />
+          <h4>HTML5, CSS, JS</h4>
+          <h3>Gradient Background Generator</h3>
+        </div>
+        <div class="project-card">
+          <img
             src="Assets/projects/speedgame.png"
             alt="Project img"
             class="project-img"
@@ -105,26 +129,6 @@
           />
           <h4>HTML5, CSS, JS</h4>
           <h3>PokeDex</h3>
-        </div>
-        <div class="project-card">
-          <img
-            src="Assets/projects/pizza.png"
-            alt="Project img"
-            class="project-img"
-            onclick="openModal('pizza')"
-          />
-          <h4>HTML5, CSS, JS</h4>
-          <h3>Pizza Order Page</h3>
-        </div>
-        <div class="project-card">
-          <img
-            src="Assets/projects/gradient.png"
-            alt="Project img"
-            class="project-img"
-            onclick="openModal('gradient')"
-          />
-          <h4>HTML5, CSS, JS</h4>
-          <h3>Gradient Background Generator</h3>
         </div>
       </div>
 
@@ -158,7 +162,6 @@
           <h3>Gradient Background Generator</h3>
         </div>
 
-        
         <div class="project-card">
           <img
             src="Assets/project-demo.jpg"
@@ -173,6 +176,32 @@
       </div>
 
       <!-- All the modals are here, but hidden at default -->
+      <div class="modal" id="tasteit">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img
+            src="Assets/projects/tasteit.png"
+            alt="project img"
+            id="modal-img"
+          />
+          <h2 id="modal-title">TasteIt recipe app</h2>
+          <p id="modal-p">
+            TasteIT is recipe app which is made in REACT22S group React lessons.
+            The app serves all the recipes from a local JSON databases, which
+            can also be updated by user with new recipe. <br /><br />
+            Recipe can be sorted by name and country of origin. The countries
+            are from REST Country API, and their flags are fetched from
+            CountryFlagsAPI. <br /><br />
+            The JSON database is provided by a classmate in REACT22S group,
+            created with ChatGPT.
+          </p>
+          <a href="https://github.com/haidanglevn/react-tasteit"
+            ><span class="material-symbols-outlined"> link </span>
+            Link to GitHub repo</a
+          >
+        </div>
+      </div>
+
       <div class="modal" id="speedgame">
         <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
@@ -187,7 +216,7 @@
             pumpkins as fast as possible.
           </p>
           <a href="https://public.bc.fi/s2200738/speedgame/"
-            >Link to live page</a
+            ><span class="material-symbols-outlined"> link </span> Link to live page</a
           >
         </div>
       </div>
@@ -206,7 +235,7 @@
             pokemon cards depends on generation. Pokemon data can also be store
             in localstorage to save time and data usage for fetching. <br />
           </p>
-          <a href="https://public.bc.fi/s2200738/pokedex/">Link to live page</a>
+          <a href="https://public.bc.fi/s2200738/pokedex/"><span class="material-symbols-outlined"> link </span> Link to live page</a>
         </div>
       </div>
 
@@ -225,7 +254,7 @@
             order.
           </p>
           <a href="https://public.bc.fi/s2200738/pizzaorder/"
-            >Link to live page</a
+            > <span class="material-symbols-outlined"> link </span> Link to live page</a
           >
         </div>
       </div>
@@ -244,7 +273,7 @@
             gradient color for CSS.
           </p>
           <a href="https://public.bc.fi/s2200738/backgroundgenerator/"
-            >Link to live page</a
+            > <span class="material-symbols-outlined"> link </span>Link to live page</a
           >
         </div>
       </div>
